@@ -9,6 +9,7 @@ import play1 from '../../public/assets/game-img/play-1.png';
 import play2 from '../../public/assets/game-img/play-2.png';
 import player from '../../public/assets/game-img/sports-player.png';
 import casinoribbon from '../../public/assets/game-img/casino-ribbon.png';
+import Brands from './Brands';
 
 
 const Promotion = () => {
@@ -38,7 +39,7 @@ const Promotion = () => {
                     <Image
                         src={banner5}
                         width={292}
-                        height={265}
+                        height={272}
                         alt=''
                     />
                 </div>
@@ -46,7 +47,7 @@ const Promotion = () => {
                     <Image
                         src={banner6}
                         width={292}
-                        height={265}
+                        height={272}
                         alt=''
                     />
                 </div>
@@ -124,7 +125,7 @@ const Promotion = () => {
                 </div>
                 <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2'>
                     <div className='flex justify-center gap-2 mb-2 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
-                        <div className="w-fit bg-[#191A17] bg-opacity-50 overflow-x-hidden h-96 py-5 pr-5">
+                        <div className="w-fit bg-[#191A17] bg-opacity-50 overflow-x-hidden h-80 py-5 pr-5">
                             <div className="sm:-mx-6 lg:-mx-8">
                                 <div className="py-2 inline-block min-w-full sm:px-6 lg:px-12">
                                     <div className="overflow-hidden">
@@ -387,22 +388,23 @@ const Promotion = () => {
                         alt=""
                     />
                 </div>
-                <div>
+                <div className='mr-3'>
                     <h2 className='uppercase font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Slot of the week</h2>
                     <h2 className='mb-3 font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>$100 slot bonus</h2>
                     <p className='text-white'>Every week we top us your account with an extra $100 to try out our large selection of slots. Start playing today</p>
                     <button className='btn btn-ghost border-none rounded-full text-white uppercase px-8 py-1 text-xs signup mt-3' style={{ background: "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)" }}>GETTING START</button>
 
                 </div>
-                <div>
+                <div className='m-2'>
                     <div className='flex justify-center items-center mt-8'>
                         <span className='text-white border-slate-100 rounded-full p-3 bg-neutral mr-3'>18+</span><p className='text-white'>Gambling games might create addiction. Play resonsibly.</p>
                     </div>
                     <div>
-                        <p className='border p-3 mt-5 rounded border-t-primary border-b-secondary border-l-primary border-r-primary text-white'>Winning percentage in 2020: 96.89%</p>
+                        <p className='border p-3 mt-5 rounded border-t-primary border-b-secondary border-l-primary border-r-primary text-white text-center'>Winning percentage in 2020: 96.89%</p>
                     </div>
                 </div>
             </div>
+            <Brands/>
         </div>
     );
 };

@@ -32,7 +32,7 @@ export default function Home() {
 
           <div className="drawer-side">
             <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-            <ul className="p-4 overflow-y-auto w-80 bg-accent text-base-content">
+            <ul className="p-4 overflow-y-auto w-72 bg-accent text-base-content">
               <li className='flex justify-center items-center'>
                 <Image
                   src={logo}
