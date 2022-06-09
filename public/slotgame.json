@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "img": "/assets/game-img/game-3.png",
+        "title": "Valley of the gods"
+    },
+    {
+        "id": 2,
+        "img": "/assets/game-img/game-2.png",
+        "title": "Hyper Burst"
+    },
+    {
+        "id": 3,
+        "img": "/assets/game-img/game-11.png",
+        "title": "Age of the gods Furious"
+    },
+    {
+        "id": 4,
+        "img": "/assets/game-img/game-1.png",
+        "title": "Regal Streak"
+    },
+    {
+        "id": 5,
+        "img": "/assets/game-img/game-12.png",
+        "title": "Fruit Cash"
+    },
+    {
+        "id": 6,
+        "img": "/assets/game-img/game-8.png",
+        "title": "Blackjack party"
+    }
+]

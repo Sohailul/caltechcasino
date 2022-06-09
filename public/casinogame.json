@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "img": "/assets/game-img/game-4.png",
+        "title": "Oracle Roulette"
+    },
+    {
+        "id": 2,
+        "img": "/assets/game-img/game-5.png",
+        "title": "Spanish Roulette"
+    },
+    {
+        "id": 3,
+        "img": "/assets/game-img/game-6.png",
+        "title": "Classic Roulette"
+    },
+    {
+        "id": 4,
+        "img": "/assets/game-img/game-7.png",
+        "title": "Macau Baccarat"
+    },
+    {
+        "id": 5,
+        "img": "/assets/game-img/game-8.png",
+        "title": "Blackjack party"
+    },
+    {
+        "id": 6,
+        "img": "/assets/game-img/game-9.png",
+        "title": "Portomaso Casino"
+    }
+]
