@@ -8,6 +8,7 @@ import flag from '../../public/assets/game-img/flag.png';
 import play1 from '../../public/assets/game-img/play-1.png';
 import play2 from '../../public/assets/game-img/play-2.png';
 import player from '../../public/assets/game-img/sports-player.png';
+import casinoribbon from '../../public/assets/game-img/casino-ribbon.png';
 
 
 const Promotion = () => {
@@ -55,7 +56,7 @@ const Promotion = () => {
                 {
                     `
                     .promotion{
-                        background-image: url('/assets/game-img/bg-promo.png');
+                        background-image: url(/assets/game-img/bg-promo.png);
                     }
                     `
                 }
@@ -63,8 +64,8 @@ const Promotion = () => {
 
             <h1 className='text-[#AB51AC] m-5 text-5xl'>FAQs</h1>
             <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2'>
-                <div className='max-w-md my-auto faq'>
-                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 glass">
+                <div className='max-w-md my-auto faq ml-5'>
+                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 bg-[#000] bg-opacity-50">
                         <div className="collapse-title text-sm font-bold text-white">
                             What is Royal Casino?
                         </div>
@@ -72,7 +73,7 @@ const Promotion = () => {
                             <p>No need worry about downloading the casino software; play straight from the browser of your choice! Play all the latest and greatest games boasting HD graphics.</p>
                         </div>
                     </div>
-                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 glass">
+                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 bg-[#000] bg-opacity-50">
                         <div className="collapse-title text-sm font-bold text-white">
                             How do I join Royal Casino as a member
                         </div>
@@ -80,7 +81,7 @@ const Promotion = () => {
                             <p>No need worry about downloading the casino software; play straight from the browser of your choice! Play all the latest and greatest games boasting HD graphics.</p>
                         </div>
                     </div>
-                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 glass">
+                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 bg-[#000] bg-opacity-50">
                         <div className="collapse-title text-sm font-bold text-white">
                             How do I join Royal Casino as a member
                         </div>
@@ -88,7 +89,7 @@ const Promotion = () => {
                             <p>No need worry about downloading the casino software; play straight from the browser of your choice! Play all the latest and greatest games boasting HD graphics.</p>
                         </div>
                     </div>
-                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 glass">
+                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 bg-[#000] bg-opacity-50">
                         <div className="collapse-title text-sm font-bold text-white">
                             Where can I redeem my earning?
                         </div>
@@ -96,7 +97,7 @@ const Promotion = () => {
                             <p>No need worry about downloading the casino software; play straight from the browser of your choice! Play all the latest and greatest games boasting HD graphics.</p>
                         </div>
                     </div>
-                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 glass">
+                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 bg-[#000] bg-opacity-50">
                         <div className="collapse-title text-sm font-bold text-white">
                             Where can I redeem my earning?
                         </div>
@@ -104,7 +105,7 @@ const Promotion = () => {
                             <p>No need worry about downloading the casino software; play straight from the browser of your choice! Play all the latest and greatest games boasting HD graphics.</p>
                         </div>
                     </div>
-                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 glass">
+                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 bg-[#000] bg-opacity-50">
                         <div className="collapse-title text-sm font-bold text-white">
                             Where can I redeem my earning?
                         </div>
@@ -112,7 +113,7 @@ const Promotion = () => {
                             <p>No need worry about downloading the casino software; play straight from the browser of your choice! Play all the latest and greatest games boasting HD graphics.</p>
                         </div>
                     </div>
-                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 glass">
+                    <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 bg-[#000] bg-opacity-50">
                         <div className="collapse-title text-sm font-bold text-white">
                             Where can I redeem my earning?
                         </div>
@@ -123,7 +124,7 @@ const Promotion = () => {
                 </div>
                 <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2'>
                     <div className='flex justify-center gap-2 mb-2 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
-                        <div className="w-fit bg-[#191A17] overflow-x-hidden h-96 py-5 pr-5">
+                        <div className="w-fit bg-[#191A17] bg-opacity-50 overflow-x-hidden h-96 py-5 pr-5">
                             <div className="sm:-mx-6 lg:-mx-8">
                                 <div className="py-2 inline-block min-w-full sm:px-6 lg:px-12">
                                     <div className="overflow-hidden">
@@ -373,9 +374,32 @@ const Promotion = () => {
                     </div>
                     <div className='max-w-3xl'>
                         <Image
-                        src={player}
-                        alt=""
+                            src={player}
+                            alt=""
                         />
+                    </div>
+                </div>
+            </div>
+            <div className='flex justify-center items-center p-5 bg-[#000] bg-opacity-50 mt-3 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3'>
+                <div>
+                    <Image
+                        src={casinoribbon}
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <h2 className='uppercase font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Slot of the week</h2>
+                    <h2 className='mb-3 font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>$100 slot bonus</h2>
+                    <p className='text-white'>Every week we top us your account with an extra $100 to try out our large selection of slots. Start playing today</p>
+                    <button className='btn btn-ghost border-none rounded-full text-white uppercase px-8 py-1 text-xs signup mt-3' style={{ background: "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)" }}>GETTING START</button>
+
+                </div>
+                <div>
+                    <div className='flex justify-center items-center mt-8'>
+                        <span className='text-white border-slate-100 rounded-full p-3 bg-neutral mr-3'>18+</span><p className='text-white'>Gambling games might create addiction. Play resonsibly.</p>
+                    </div>
+                    <div>
+                        <p className='border p-3 mt-5 rounded border-t-primary border-b-secondary border-l-primary border-r-primary text-white'>Winning percentage in 2020: 96.89%</p>
                     </div>
                 </div>
             </div>
