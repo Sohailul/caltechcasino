@@ -9,6 +9,7 @@ import { BsFillGiftFill } from 'react-icons/bs';
 import SlotGame from './SlotGame';
 import CasinoGame from './Home/CasinoGame';
 import Promotion from './Home/Promotion';
+import Footer from './shared/Footer';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
             <SlotGame/>
             <CasinoGame/>
             <Promotion/>
+            <Footer/>
 
           </div>
 

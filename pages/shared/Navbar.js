@@ -1,7 +1,9 @@
+import { BsDiscord, BsTwitter, BsInstagram, BsQuestionCircle } from 'react-icons/bs';
+import { FaTelegramPlane, FaGlobeAfrica } from 'react-icons/fa';
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar" style={{backgroundColor: "#1E0338", color: "#fff"}}>
+            <div className="navbar" style={{ backgroundColor: "#1E0338", color: "#fff" }}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex="0" htmlFor="dashboard-sidebar" className="btn btn-ghost lg:hidden">
@@ -26,6 +28,14 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
+                    <div className='flex justify-center items-center gap-3 mr-12 text-xl'>
+                    <span><a href=""><FaGlobeAfrica /></a></span>
+                    <span><a href=""><BsQuestionCircle /></a></span>
+                    <span></span>
+                    <span><BsTwitter /></span>
+                    <span><FaTelegramPlane /></span>
+                    <span><BsDiscord /></span>
+                    </div>
                     <button className='btn btn-outline rounded-full border-t-primary border-b-secondary border-l-primary border-r-primary uppercase px-8 py-1 login mr-5 text-white'>Login</button>
                     <button className='btn btn-ghost border-none rounded-full text-white uppercase px-8 py-1 text-xs signup'>Sign Up</button>
 

@@ -69,7 +69,7 @@ const Brands = () => {
                     />
                 </div>
             </div>
-            <div className='m-5 grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 mt-5 gap-4'>
+            <div className='mx-5 grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 mt-5 gap-4'>
                 <div className='flex justify-center items-center w-36 h-20 bg-[#2E2F2E] bg-opacity-50 rounded'>
                     <Image
                         src={brand1}
