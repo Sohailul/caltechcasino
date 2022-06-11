@@ -28,7 +28,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <div className='flex justify-center items-center gap-3 mr-12 text-xl'>
+                    <div className='hidden lg:flex flex justify-center items-center gap-3 mr-12 text-xl'>
                     <span><a href=""><FaGlobeAfrica /></a></span>
                     <span><a href=""><BsQuestionCircle /></a></span>
                     <span></span>

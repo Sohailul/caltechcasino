@@ -1,11 +1,20 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Navbar from './shared/Navbar';
+import Link from 'next/link';
 import Banner from './Home/Banner';
 import logo from '../public/assets/logo.png';
 import profile from '../public/assets/icon_profile.png';
+import bannerpromo from '../public/assets/game-img/banner_promotion.png';
 import { AiFillBell } from 'react-icons/ai';
 import { BsFillGiftFill } from 'react-icons/bs';
+import { FaBullhorn, FaHome, FaWallet } from 'react-icons/fa';
+import { GiCircleCage, GiCherry } from 'react-icons/gi';
+import { MdSportsFootball } from 'react-icons/md';
+import { IoIosRocket } from 'react-icons/io';
+import { SiApachenetbeanside } from 'react-icons/si';
+import { TbAffiliate } from 'react-icons/tb';
+import { RiVipDiamondLine } from 'react-icons/ri';
 import SlotGame from './SlotGame';
 import CasinoGame from './Home/CasinoGame';
 import Promotion from './Home/Promotion';
@@ -25,16 +34,16 @@ export default function Home() {
           <div className="drawer-content">
             <Navbar />
             <Banner />
-            <SlotGame/>
-            <CasinoGame/>
-            <Promotion/>
-            <Footer/>
+            <SlotGame />
+            <CasinoGame />
+            <Promotion />
+            <Footer />
 
           </div>
 
-          <div className="drawer-side">
+          <div className="drawer-side scrollbar-hide">
             <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-            <ul className="p-4 overflow-y-auto w-72 bg-accent text-base-content">
+            <ul className="p-4 w-72 bg-accent text-base-content">
               <li className='flex justify-center items-center'>
                 <Image
                   src={logo}
@@ -79,6 +88,41 @@ export default function Home() {
                   </div>
                 </div>
               </li>
+
+              <li className='profile mt-8 bg-[#2F1745] rounded-xl '>
+                <div className="card mt-3 w-64">
+                  <div className="card-body">
+                    <Link href="">
+                      <a className='promotionbanner flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter] bg-[#C4C4C4] bg-opacity-10 p-2 rounded-lg'><span className='home-icon'><FaBullhorn /></span>&nbsp;&nbsp;Promotions</a>
+                    </Link>
+                    <div className='bg-[#C4C4C4] bg-opacity-10 p-2 rounded-lg divide-y divide-[#010800]'>
+                      <Link href="">
+                        <a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><FaHome /></span>&nbsp;&nbsp;Home</a>
+                      </Link>
+                      <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><GiCircleCage /></span>&nbsp;&nbsp;Live Casino</a></Link>
+                      <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><MdSportsFootball /></span>&nbsp;&nbsp;Sport book</a></Link>
+                      <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><IoIosRocket /></span>&nbsp;&nbsp;SonicX Rocket</a></Link>
+                      <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><GiCherry /></span>&nbsp;&nbsp;Slot Game</a></Link>
+                      <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><SiApachenetbeanside /></span>&nbsp;&nbsp;Lottery</a></Link>
+                    </div>
+                    <div className='bg-[#C4C4C4] bg-opacity-10 p-2 rounded-lg divide-y divide-[#010800]'>
+                      <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><FaWallet /></span>&nbsp;&nbsp;Wallet</a></Link>
+                      <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><TbAffiliate /></span>&nbsp;&nbsp;Affiliate</a></Link>
+                      <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><RiVipDiamondLine /></span>&nbsp;&nbsp;VIP Club</a></Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li className='profile mt-8 text-center'>
+
+                <Image
+                  src={bannerpromo}
+                  width={194}
+                  height={256}
+                  alt="" />
+
+              </li>
             </ul>
             <style jsx>
               {
@@ -86,7 +130,22 @@ export default function Home() {
                 .login:hover{
                   background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
                   border: 1px solid none;
-
+              }
+              .promotionbanner:hover{
+                background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+	              -webkit-background-clip: text;
+	              -webkit-text-fill-color: transparent;
+              }
+              .home:hover{
+                background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+	              -webkit-background-clip: text;
+	              -webkit-text-fill-color: transparent;
+              }
+              .home-icon:hover{
+                background-image: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+	              border-radius: 50%;
+                padding: 5px;
+                
               }
                 `
               }

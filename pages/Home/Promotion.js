@@ -124,8 +124,8 @@ const Promotion = () => {
                     </div>
                 </div>
                 <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2'>
-                    <div className='flex justify-center gap-2 mb-2 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
-                        <div className="w-fit bg-[#191A17] bg-opacity-50 overflow-x-hidden h-80 py-5 pr-5">
+                    <div className='flex justify-center gap-2 mb-2 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:-ml-12'>
+                        <div className="w-fit bg-[#191A17] bg-opacity-50 overflow-x-hidden overflow-scroll h-80 py-5 pr-5">
                             <div className="sm:-mx-6 lg:-mx-8">
                                 <div className="py-2 inline-block min-w-full sm:px-6 lg:px-12">
                                     <div className="overflow-hidden">
