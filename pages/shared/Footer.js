@@ -7,8 +7,8 @@ import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
 const Footer = () => {
   return (
-    <div className='bg-[#000] bg-opacity-100' style={{ backgroundImage: "url(/assets/game-img/footer-bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-      <div className="flex justify-center grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5 p-12">
+    <div className='bg-[#000] bg-opacity-100' style={{ backgroundImage: "url(/assets/game-img/footer-bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+      <div className="flex justify-center grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5 px-12">
         <div className="flex items-end w-3/4 lg:-ml-8">
           <Image
             src={prodpoker}
@@ -64,9 +64,6 @@ const Footer = () => {
             src={casinoright}
             alt="" />
         </div>
-      </div>
-      <div className='text-white flex justify-center items-center'>
-        <p className='text-center w-9/12 text-sm mb-12'>© 2022 Royal Casino Limited or affiliate companies. The trademarks are owned by the Royal Casino group of companies and used under liense. All rights reserved</p>
       </div>
     </div>
   );

@@ -19,35 +19,27 @@ const Promotion = () => {
                 src={earnbig}
                 alt=""
             />
-            <h1 className="text-xs p-2 text-left font-bold mb-5 mt-5"><span className="w-60 p-4 text-white text-xl border-l-4 border-l-primary" style={{ background: "linear-gradient(90.19deg, rgba(41, 39, 39, 0.6) 9.31%, rgba(41, 39, 39, 0) 108.49%)" }}>Promotions</span></h1>
+            <h1 className="text-xs p-2 text-left font-bold mb-5 mt-5"><span className="w-60 p-2 text-white text-xl border-l-2 border-l-primary" style={{ background: "linear-gradient(90.19deg, rgba(41, 39, 39, 0.6) 9.31%, rgba(41, 39, 39, 0) 108.49%)" }}>Promotions</span></h1>
             <div className='flex justify-center gap-1'>
-                <div className='w-1/2 grid sm:grid-cols-1 md:grid-cols-1 gap-1'>
+                <div className='grid gap-2'>
                     <Image
                         src={banner3}
-                        width={874}
-                        height={187}
                         alt=''
                     />
                     <Image
                         src={banner4}
-                        width={874}
-                        height={193}
                         alt=''
                     />
                 </div>
-                <div>
+                <div className='grid gap-2'>
                     <Image
                         src={banner5}
-                        width={292}
-                        height={272}
                         alt=''
                     />
                 </div>
-                <div>
+                <div className='grid gap-2'>
                     <Image
                         src={banner6}
-                        width={292}
-                        height={272}
                         alt=''
                     />
                 </div>
@@ -64,6 +56,7 @@ const Promotion = () => {
             </style>
 
             <h1 className='text-[#AB51AC] m-5 text-5xl'>FAQs</h1>
+            <div>
             <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2'>
                 <div className='max-w-md my-auto faq ml-5'>
                     <div tabIndex="0" className="collapse collapse-arrow border border-slate-300 bg-[#000] bg-opacity-50">
@@ -124,10 +117,10 @@ const Promotion = () => {
                     </div>
                 </div>
                 <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2'>
-                    <div className='flex justify-center gap-2 mb-2 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:-ml-12'>
-                        <div className="w-fit bg-[#191A17] bg-opacity-50 overflow-x-hidden overflow-scroll h-80 py-5 pr-5">
-                            <div className="sm:-mx-6 lg:-mx-8">
-                                <div className="py-2 inline-block min-w-full sm:px-6 lg:px-12">
+                    <div className='flex justify-center gap-2 lg:gap-24 mb-2 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
+                        <div className="w-fit bg-[#191A17] bg-opacity-50 overflow-x-hidden overflow-scroll h-72 py-3 mt-5">
+                            <div className="max-w">
+                                <div>
                                     <div className="overflow-hidden">
                                         <table className="text-center">
                                             <caption className='text-[#AB51AC] text-2xl'>Recent Winners</caption>
@@ -362,7 +355,7 @@ const Promotion = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='verticle-banner flex gap-2'>
+                        <div className='max-w h-auto verticle-banner flex gap-2 mt-5'>
                             <Image
                                 src={play1}
                                 alt=""
@@ -373,13 +366,14 @@ const Promotion = () => {
                             />
                         </div>
                     </div>
-                    <div className='max-w-3xl'>
+                    <div>
                         <Image
                             src={player}
                             alt=""
                         />
                     </div>
                 </div>
+            </div>
             </div>
             <div className='flex justify-center items-center p-5 bg-[#000] bg-opacity-50 mt-3 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3'>
                 <div>

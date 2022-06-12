@@ -29,25 +29,38 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <div className='hidden lg:flex flex justify-center items-center gap-3 mr-12 text-xl'>
-                    <span><a href=""><FaGlobeAfrica /></a></span>
-                    <span><a href=""><BsQuestionCircle /></a></span>
-                    <span></span>
-                    <span><BsTwitter /></span>
-                    <span><FaTelegramPlane /></span>
-                    <span><BsDiscord /></span>
+                        <span><a href=""><FaGlobeAfrica /></a></span>
+                        <span><a href=""><BsQuestionCircle /></a></span>
+                        <span></span>
+                        <span><BsTwitter /></span>
+                        <span><FaTelegramPlane /></span>
+                        <span><BsDiscord /></span>
                     </div>
-                    <button className='btn btn-outline rounded-full border-t-primary border-b-secondary border-l-primary border-r-primary uppercase px-8 py-1 login mr-5 text-white'>Login</button>
-                    <button className='btn btn-ghost border-none rounded-full text-white uppercase px-8 py-1 text-xs signup'>Sign Up</button>
+                    <button className='btn text-white rounded-full uppercase px-8 py-1 login mr-5'>Login</button>
+                    <button className='btn border-none rounded-full text-white uppercase px-8 py-1 signup'>Sign Up</button>
 
                 </div>
                 <style jsx>
                     {
-                        `
-                                .login:hover{
-                                    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
-                                    border: 1px solid none;
-
-                                }
+                        `   
+                        .login{
+                            border-radius: 100rem;
+                            //font-size: 1rem;
+                            //padding: .5rem 3rem;
+                            color: white;
+                            //box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+                            border: solid 2px transparent;
+                            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+                            background-origin: border-box;
+                            background-clip: content-box, border-box;
+                            box-shadow: 2px 1000px 1px #1E0338 inset;
+                        }
+                        .login:hover{   
+                                //background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+                                //border: 1px solid none;
+                                box-shadow: none;
+                                color: white;
+                            }
                                 .signup{
                                     background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
                                 }

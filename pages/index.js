@@ -62,13 +62,13 @@ export default function Home() {
                 </div>
               </li>
               <li className='profile -mt-12 bg-[#2F1745] rounded-xl'>
-                <div className="card mt-5">
-                  <div className="card-body">
-                    <div className='mx-auto mt-3'>
-                      <button className='btn btn-outline rounded-full border-t-primary border-b-secondary border-l-primary border-r-primary uppercase login w-32 mr-5 text-white'>Login</button>
+                <div className="card mt-3">
+                  <div className='h-60'>
+                    <div className='mx-auto mt-12 text-center'>
+                    <button className='text-white rounded-full uppercase px-8 py-1 login mr-5'>Login</button>
                     </div>
                     <div className='flex justify-center items-center gap-3 mt-5'>
-                      <div className="w-32 bg-accent shadow-xl h-24 rounded-md">
+                      <div className="w-28 bg-accent shadow-xl h-24 rounded-md">
                         <div className='flex justify-center items-center mt-5 text-3xl text-slate-500'>
                           <AiFillBell />
                         </div>
@@ -76,7 +76,7 @@ export default function Home() {
                           <h2>Notifications</h2>
                         </div>
                       </div>
-                      <div className="w-32 bg-accent shadow-xl h-24 rounded-md">
+                      <div className="w-28 bg-accent shadow-xl h-24 rounded-md">
                         <div className='flex justify-center items-center mt-5 text-3xl text-slate-500'>
                           <BsFillGiftFill />
                         </div>
@@ -90,12 +90,12 @@ export default function Home() {
               </li>
 
               <li className='profile mt-8 bg-[#2F1745] rounded-xl '>
-                <div className="card mt-3 w-64">
-                  <div className="card-body">
+                <div className="card mt-3 w-56 mx-auto">
+                  <div>
                     <Link href="">
-                      <a className='promotionbanner flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter] bg-[#C4C4C4] bg-opacity-10 p-2 rounded-lg'><span className='home-icon'><FaBullhorn /></span>&nbsp;&nbsp;Promotions</a>
+                      <a className='promotionbanner flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter] bg-[#C4C4C4] bg-opacity-10 p-2 rounded-lg mt-3'><span className='home-icon'><FaBullhorn /></span>&nbsp;&nbsp;Promotions</a>
                     </Link>
-                    <div className='bg-[#C4C4C4] bg-opacity-10 p-2 rounded-lg divide-y divide-[#010800]'>
+                    <div className='bg-[#C4C4C4] bg-opacity-10 px-2 rounded-lg divide-y divide-[#010800] mt-2'>
                       <Link href="">
                         <a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><FaHome /></span>&nbsp;&nbsp;Home</a>
                       </Link>
@@ -105,7 +105,7 @@ export default function Home() {
                       <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><GiCherry /></span>&nbsp;&nbsp;Slot Game</a></Link>
                       <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><SiApachenetbeanside /></span>&nbsp;&nbsp;Lottery</a></Link>
                     </div>
-                    <div className='bg-[#C4C4C4] bg-opacity-10 p-2 rounded-lg divide-y divide-[#010800]'>
+                    <div className='bg-[#C4C4C4] bg-opacity-10 p-2 rounded-lg divide-y divide-[#010800] mt-2 mb-8'>
                       <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><FaWallet /></span>&nbsp;&nbsp;Wallet</a></Link>
                       <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><TbAffiliate /></span>&nbsp;&nbsp;Affiliate</a></Link>
                       <Link href=""><a className='home flex justify-start items-center text-md text-white text-opacity-50 py-3 font-[Inter]'><span className='home-icon'><RiVipDiamondLine /></span>&nbsp;&nbsp;VIP Club</a></Link>
@@ -114,12 +114,10 @@ export default function Home() {
                 </div>
               </li>
 
-              <li className='profile mt-8 text-center'>
+              <li className='profile mt-3 text-center'>
 
                 <Image
                   src={bannerpromo}
-                  width={194}
-                  height={256}
                   alt="" />
 
               </li>
@@ -127,10 +125,19 @@ export default function Home() {
             <style jsx>
               {
                 `
-                .login:hover{
-                  background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
-                  border: 1px solid none;
+                .login{
+                  border-radius: 100rem;
+                  color: white;
+                  border: solid 2px transparent;
+                  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+                  background-origin: border-box;
+                  background-clip: content-box, border-box;
+                  box-shadow: 2px 1000px 1px #1E0338 inset;
               }
+              .login:hover{   
+                      box-shadow: none;
+                      color: white;
+                  }
               .promotionbanner:hover{
                 background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
 	              -webkit-background-clip: text;
