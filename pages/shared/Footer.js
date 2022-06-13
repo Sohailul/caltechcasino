@@ -59,13 +59,13 @@ const Footer = () => {
           <br />
           <button className='btn btn-ghost border-none rounded-full text-white uppercase px-12 py-3 text-xs signup my-5' style={{ background: "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)" }}>Contact Us</button>
         </div>
-        <div className="flex items-end">
-          <div className='text-white -ml-96 mb-12 text-xs'>
-            <p>© 2022 Royal Casino Limited or affiliate companies. The trademarks are owned by the Royal Casino group of companies and used under liense. All rights reserved</p>
-          </div>
-          <Image
+        <div className="flex items-end flex-col lg:flex-row-reverse">
+        <Image
             src={casinoright}
             alt="" />
+          <div className='text-justify text-white lg:-ml-96 mb-12'>
+            <p>© 2022 Royal Casino Limited or affiliate companies. The trademarks are owned by the Royal Casino group of companies and used under liense. All rights reserved</p>
+          </div>
         </div>
       </div>
     </div>
