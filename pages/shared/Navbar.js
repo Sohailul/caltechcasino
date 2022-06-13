@@ -3,7 +3,7 @@ import { FaTelegramPlane, FaGlobeAfrica } from 'react-icons/fa';
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar" style={{ backgroundColor: "#1E0338", color: "#fff" }}>
+            <div className="navbar" style={{ color: "#fff" }}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex="0" htmlFor="dashboard-sidebar" className="btn btn-ghost lg:hidden">

@@ -6,6 +6,7 @@ import Banner from './Home/Banner';
 import logo from '../public/assets/logo.png';
 import profile from '../public/assets/icon_profile.png';
 import bannerpromo from '../public/assets/game-img/banner_promotion.png';
+import support from '../public/assets/support.png';
 import { AiFillBell } from 'react-icons/ai';
 import { BsFillGiftFill } from 'react-icons/bs';
 import { FaBullhorn, FaHome, FaWallet } from 'react-icons/fa';
@@ -37,7 +38,18 @@ export default function Home() {
             <SlotGame />
             <CasinoGame />
             <Promotion />
+            <div className='flex justify-end mr-8'>
+              <button className="fixed bottom-32">
+                <Image
+                src={support}
+                width={100}
+                height={100}
+                alt=""
+                />
+              </button>
+            </div>
             <Footer />
+
 
           </div>
 
@@ -65,7 +77,7 @@ export default function Home() {
                 <div className="card mt-3">
                   <div className='h-60'>
                     <div className='mx-auto mt-12 text-center'>
-                    <button className='text-white rounded-full uppercase px-8 py-1 login mr-5'>Login</button>
+                      <button className='text-white rounded-full uppercase px-12 py-1 login mr-5'>Login</button>
                     </div>
                     <div className='flex justify-center items-center gap-3 mt-5'>
                       <div className="w-28 bg-accent shadow-xl h-24 rounded-md">
