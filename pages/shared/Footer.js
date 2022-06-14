@@ -66,7 +66,7 @@ const Footer = () => {
             alt="" />
         </div>
           <div className='text-justify text-white lg:-ml-96 mb-12'>
-            <p>© 2022 Royal Casino Limited or affiliate companies. The trademarks are owned by the Royal Casino group of companies and used under liense. All rights reserved</p>
+            <p className='text-[12px] tracking-tight'>© 2022 Royal Casino Limited or affiliate companies. The trademarks are owned by the Royal Casino group of companies and used under liense. All rights reserved</p>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import banner from '../../public/assets/banner.png';
 
 const Banner = () => {
     return (
-        <div className='bg-accent'>
+        <div className='bg-[#1E0338]'>
             <Image
             src={banner}
             alt=""

@@ -55,7 +55,7 @@ export default function Home() {
 
           <div className="drawer-side scrollbar-hide">
             <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-            <ul className="p-4 w-72 bg-accent text-base-content">
+            <ul className="p-4 w-72 text-base-content">
               <li className='flex justify-center items-center'>
                 <Image
                   src={logo}
@@ -80,19 +80,19 @@ export default function Home() {
                       <button className='text-white rounded-full uppercase px-12 py-1 login mr-5'>Login</button>
                     </div>
                     <div className='flex justify-center items-center gap-3 mt-5'>
-                      <div className="w-28 bg-accent shadow-xl h-24 rounded-md">
-                        <div className='flex justify-center items-center mt-5 text-3xl text-slate-500'>
+                      <div className="w-28 bg-[#C4C4C4] bg-opacity-10 shadow-xl h-24 rounded-md">
+                        <div className='flex justify-center items-center mt-5 text-3xl text-white text-opacity-50'>
                           <AiFillBell />
                         </div>
-                        <div className="text-sm text-slate-500 mt-2 flex justify-center items-center font-bold">
+                        <div className="text-sm text-white text-opacity-50 mt-2 flex justify-center items-center font-bold">
                           <h2>Notifications</h2>
                         </div>
                       </div>
-                      <div className="w-28 bg-accent shadow-xl h-24 rounded-md">
-                        <div className='flex justify-center items-center mt-5 text-3xl text-slate-500'>
+                      <div className="w-28 bg-[#C4C4C4] bg-opacity-10 shadow-xl h-24 rounded-md">
+                        <div className='flex justify-center items-center mt-5 text-3xl text-white text-opacity-50'>
                           <BsFillGiftFill />
                         </div>
-                        <div className="text-sm text-slate-500 mt-2 flex justify-center items-center font-bold">
+                        <div className="text-sm text-white text-opacity-50 mt-2 flex justify-center items-center font-bold">
                           <h2>Freeplay</h2>
                         </div>
                       </div>
