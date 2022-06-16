@@ -1,5 +1,7 @@
 import { BsDiscord, BsTwitter, BsInstagram, BsQuestionCircle } from 'react-icons/bs';
 import { FaTelegramPlane, FaGlobeAfrica } from 'react-icons/fa';
+import Login from '../Auth/Login';
+import SignUp from '../Auth/SignUp';
 const Navbar = () => {
     return (
         <div>
@@ -36,8 +38,8 @@ const Navbar = () => {
                         <span><FaTelegramPlane /></span>
                         <span><BsDiscord /></span>
                     </div>
-                    <button className='btn text-white rounded-full uppercase px-8 py-1 login mr-5'>Login</button>
-                    <button className='btn border-none rounded-full text-white uppercase px-8 py-1 signup'>Sign Up</button>
+                    <label for="login-modal" className='btn modal-button text-white rounded-full uppercase px-8 py-1 login mr-5'>Login</label>
+                    <label for="signup-modal" className='btn modal-button border-none rounded-full text-white uppercase px-8 py-1 signup'>Sign Up</label>
 
                 </div>
                 <style jsx>
@@ -73,6 +75,9 @@ const Navbar = () => {
                             `
                     }
                 </style>
+
+                <Login/>
+                <SignUp/>
             </div>
         </div>
     );
