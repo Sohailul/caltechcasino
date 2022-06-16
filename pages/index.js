@@ -16,7 +16,7 @@ import { IoIosRocket } from 'react-icons/io';
 import { SiApachenetbeanside } from 'react-icons/si';
 import { TbAffiliate } from 'react-icons/tb';
 import { RiVipDiamondLine } from 'react-icons/ri';
-import SlotGame from './SlotGame';
+import SlotGame from './Home/SlotGame';
 import CasinoGame from './Home/CasinoGame';
 import Promotion from './Home/Promotion';
 import Footer from './shared/Footer';
@@ -41,10 +41,10 @@ export default function Home() {
             <div className='flex justify-end mr-8'>
               <button className="fixed bottom-32">
                 <Image
-                src={support}
-                width={80}
-                height={80}
-                alt=""
+                  src={support}
+                  width={80}
+                  height={80}
+                  alt=""
                 />
               </button>
             </div>

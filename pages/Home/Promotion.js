@@ -1,10 +1,10 @@
+import { useState, useEffect } from "react";
 import Image from 'next/image';
 import banner3 from '../../public/assets/game-img/banner-3.png';
 import banner4 from '../../public/assets/game-img/banner-4.png';
 import banner5 from '../../public/assets/game-img/banner-5.png';
 import banner6 from '../../public/assets/game-img/banner-6.png';
 import earnbig from '../../public/assets/game-img/earn-big.png';
-import flag from '../../public/assets/game-img/flag.png';
 import play1 from '../../public/assets/game-img/play-1.png';
 import play2 from '../../public/assets/game-img/play-2.png';
 import player from '../../public/assets/game-img/sports-player.png';
@@ -13,6 +13,18 @@ import Brands from './Brands';
 
 
 const Promotion = () => {
+    const [winners, setWinners] = useState(null);
+    const [isLoading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true)
+        fetch('/winners.json')
+            .then((res) => res.json())
+            .then((data) => {
+                setWinners(data)
+                setLoading(false)
+            })
+    }, [])
     return (
         <div className='promotion'>
             <Image
@@ -50,6 +62,26 @@ const Promotion = () => {
                     `
                     .promotion{
                         background-image: url(/assets/game-img/bg-promo.png);
+                    }
+                    
+                    ::-webkit-scrollbar {
+                    width: 10px;
+                    }
+
+
+                    ::-webkit-scrollbar-track {
+                    background: #000; 
+                    }
+                    
+
+                    ::-webkit-scrollbar-thumb {
+                    background: #555;
+                    border-radius: 30px;
+                    }
+
+
+                    ::-webkit-scrollbar-thumb:hover {
+                    background: #fff; 
                     }
                     `
                 }
@@ -116,237 +148,37 @@ const Promotion = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2'>
+                    <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2 mx-3'>
                         <div className='flex justify-center gap-2 lg:gap-24 mb-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
                             <div className="w-fit bg-[#191A17] bg-opacity-50 overflow-x-hidden overflow-scroll h-72 py-3 mt-5">
-                                <div className="overflow-hidden">
-                                    <table className="text-center">
+                                <div className="overflow-hidden w-full">
+                                    <table className="lg:w-72">
                                         <caption className='text-[#AB51AC] text-2xl'>Recent Winners</caption>
                                         <tbody>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Monica L.Mashburn
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $340.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-2 py-2 whitespace-nowrap text-sm font-medium">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td className="px-6 py-2 whitespace-nowrap text-sm">
-                                                    <div className="flex justify-center items-center">
-                                                        <Image src={flag} alt="" />
-                                                    </div>
-                                                </td>
-                                                <td className="text-sm text-gray-300 px-4 py-2 whitespace-nowrap">
-                                                    Ida M.Zendejas
-                                                </td>
-                                                <td className="text-sm text-white px-4 py-2 whitespace-nowrap">
-                                                    $349.00
-                                                </td>
-
-                                            </tr>
+                                            {
+                                                winners?.map((winner) => {
+                                                    return (
+                                                        <tr className="whitespace-nowrap" key={winner.id}>
+                                                            <td className="px-3 py-4">
+                                                                <Image 
+                                                                src={winner.flag}
+                                                                width={36}
+                                                                height={16}
+                                                                alt=""
+                                                                />
+                                                            </td>
+                                                            <td className="px-3 py-4 text-center">
+                                                                <div className="text-sm text-gray-300">
+                                                                    {winner.name}
+                                                                </div>
+                                                            </td>
+                                                            <td className=" px-5 py-4">
+                                                                <div className="text-sm text-gray-300">${winner.amount}</div>
+                                                            </td>
+                                                        </tr>
+                                                    )
+                                                })
+                                            }
                                         </tbody>
                                     </table>
                                 </div>

@@ -34,11 +34,11 @@ const SlotGame = () => {
                                         <div className="absolute top-0 right-0 -mt-5">
                                             {
                                                 g.hot ? <Image
-                                                src={g.hot}
-                                                width={58}
-                                                height={67}
-                                                alt=""
-                                            />: ""
+                                                    src={g.hot}
+                                                    width={58}
+                                                    height={67}
+                                                    alt=""
+                                                /> : ""
                                             }
                                         </div>
                                         <h2 className="text-white text-xs p-2 text-left font-bold ml-5" style={{ background: "linear-gradient(90deg, #460F7B 1.68%, rgba(228, 10, 180, 0) 73.74%)" }}>{g.title}</h2>
