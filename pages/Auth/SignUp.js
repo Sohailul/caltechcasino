@@ -12,7 +12,7 @@ const SignUp = () => {
     <div>
       <input type="checkbox" id="signup-modal" className="modal-toggle" />
       <label htmlFor="signup-modal" className="modal cursor-pointer">
-        <label className="modals-bg p-8 modal-box max-w relative max-h-screen" htmlFor="">
+        <label className="modals-bg p-8 modal-box max-w relative" htmlFor="">
           <div className="text-center">
             <Image src={logo} width={95} height={95} alt="logo" />
           </div>
@@ -35,6 +35,7 @@ const SignUp = () => {
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
                     borderRadius: "50px",
+                    fontSize: "20px",
                   }}
                 />
               </div>
@@ -61,6 +62,7 @@ const SignUp = () => {
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
                     borderRadius: "50px",
+                    fontSize: "20px",
                   }}
                 />
               </div>
@@ -87,6 +89,7 @@ const SignUp = () => {
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
                     borderRadius: "50px",
+                    fontSize: "20px",
                   }}
                 />
               </div>
@@ -113,6 +116,7 @@ const SignUp = () => {
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
                     borderRadius: "50px",
+                    fontSize: "20px",
                   }}
                 />
               </div>
@@ -139,6 +143,7 @@ const SignUp = () => {
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
                     borderRadius: "50px",
+                    fontSize: "20px",
                   }}
                 />
               </div>
@@ -165,6 +170,7 @@ const SignUp = () => {
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
                     borderRadius: "50px",
+                    fontSize: "20px",
                   }}
                 />
               </div>
@@ -191,6 +197,7 @@ const SignUp = () => {
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
                     borderRadius: "50px",
+                    fontSize: "20px",
                   }}
                 />
               </div>

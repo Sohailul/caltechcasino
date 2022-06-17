@@ -21,9 +21,9 @@ a {
   box-sizing: border-box;
 }
 
-//Checkbox Styles
+/* Checkbox Styles */
 
-.checkbox {
+/* .checkbox {
   display: inline-flex;
   cursor: pointer;
   position: relative;
@@ -61,4 +61,4 @@ a {
 
 .checkbox > input:active {
   border: 2px solid #34495e;
-}
+} */

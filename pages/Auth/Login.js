@@ -8,7 +8,7 @@ const Login = () => {
     <div>
       <input type="checkbox" id="login-modal" className="modal-toggle" />
       <label htmlFor="login-modal" className="modal cursor-pointer">
-        <label className="modal-bg p-8 modal-box max-w relative max-h-screen" htmlFor="">
+        <label className="modal-bg p-8 modal-box max-w relative" htmlFor="">
           <div className="text-center">
             <Image src={logo} width={95} height={95} alt="logo" />
           </div>
@@ -31,6 +31,7 @@ const Login = () => {
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
                     borderRadius: "50px",
+                    fontSize: "20px",
                   }}
                 />
               </div>
@@ -56,6 +57,7 @@ const Login = () => {
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
                     borderRadius: "50px",
+                    fontSize: "20px",
                   }}
                 />
               </div>
@@ -72,14 +74,14 @@ const Login = () => {
             </button>
             <div className="mt-3 text-center">
               <label htmlFor="remember" className="checkbox">
-                <span className="mr-5">Remember me?</span>
-              <input
-                type="checkbox"
-                className="checkmark"
-                id="remember"
-                name="remember"
-                value="login"
-              />
+                <span className="mr-3">Remember me?</span>
+                <input
+                  type="checkbox"
+                  className="checkmark"
+                  id="remember"
+                  name="remember"
+                  value="login"
+                />
               </label>
             </div>
           </form>
@@ -120,7 +122,6 @@ const Login = () => {
               box-shadow: none;
               color: black;
           }
-
           `}
       </style>
     </div>
