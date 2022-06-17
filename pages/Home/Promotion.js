@@ -63,26 +63,6 @@ const Promotion = () => {
                     .promotion{
                         background-image: url(/assets/game-img/bg-promo.png);
                     }
-                    
-                    ::-webkit-scrollbar {
-                    width: 10px;
-                    }
-
-
-                    ::-webkit-scrollbar-track {
-                    background: #000; 
-                    }
-                    
-
-                    ::-webkit-scrollbar-thumb {
-                    background: #555;
-                    border-radius: 30px;
-                    }
-
-
-                    ::-webkit-scrollbar-thumb:hover {
-                    background: #fff; 
-                    }
                     `
                 }
             </style>

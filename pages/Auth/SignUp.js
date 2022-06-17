@@ -258,7 +258,6 @@ const SignUp = () => {
 
         .checkmark{
           accent-color: #FD749B;
-          accent-background: black;
         }
 
         .logbtn{

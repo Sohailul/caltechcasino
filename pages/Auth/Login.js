@@ -122,6 +122,10 @@ const Login = () => {
               box-shadow: none;
               color: black;
           }
+
+          .checkmark{
+            accent-color: #FD749B;
+          }
           `}
       </style>
     </div>
