@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="lg:ml-44 w-52 mb-12 text-white lg:mt-24">
           <h1 className="text-2xl font-bold my-5 text-primary">Go mobile</h1>
           <p className="mb-5">Acess Royal Casino basically everywhere you go</p>
-          <Link href="/">
+          <Link href="#">
             <a className="font-bold link">Download App</a>
           </Link>
           <br />

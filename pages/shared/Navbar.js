@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { BsDiscord, BsTwitter, BsInstagram, BsQuestionCircle } from 'react-icons/bs';
 import { FaTelegramPlane, FaGlobeAfrica } from 'react-icons/fa';
 import Login from '../Auth/Login';
@@ -31,15 +32,14 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <div className='hidden lg:flex flex justify-center items-center gap-3 mr-12 text-xl'>
-                        <span><a href=""><FaGlobeAfrica /></a></span>
-                        <span><a href=""><BsQuestionCircle /></a></span>
-                        <span></span>
-                        <span><BsTwitter /></span>
-                        <span><FaTelegramPlane /></span>
-                        <span><BsDiscord /></span>
+                        <span><Link href="#"><a><FaGlobeAfrica /></a></Link></span>
+                        <span><Link href="#"><a><BsQuestionCircle /></a></Link></span>
+                        <span><Link href="#"><a><BsTwitter /></a></Link></span>
+                        <span><Link href="#"><a><FaTelegramPlane /></a></Link></span>
+                        <span><Link href="#"><a><BsDiscord /></a></Link></span>
                     </div>
-                    <label for="login-modal" className='btn modal-button text-white rounded-full uppercase px-8 py-1 login mr-5'>Login</label>
-                    <label for="signup-modal" className='btn modal-button border-none rounded-full text-white uppercase px-8 py-1 signup'>Sign Up</label>
+                    <label htmlFor="login-modal" className='btn modal-button text-white rounded-full uppercase px-8 py-1 login mr-5'>Login</label>
+                    <label htmlFor="signup-modal" className='btn modal-button border-none rounded-full text-white uppercase px-8 py-1 signup'>Sign Up</label>
 
                 </div>
                 <style jsx>

@@ -11,8 +11,8 @@ const SignUp = () => {
   return (
     <div>
       <input type="checkbox" id="signup-modal" className="modal-toggle" />
-      <label for="signup-modal" className="modal cursor-pointer">
-        <label className="modals-bg p-8 modal-box w-full relative" for="">
+      <label htmlFor="signup-modal" className="modal cursor-pointer">
+        <label className="modals-bg p-8 modal-box max-w relative max-h-screen" htmlFor="">
           <div className="text-center">
             <Image src={logo} width={95} height={95} alt="logo" />
           </div>
@@ -34,7 +34,7 @@ const SignUp = () => {
                     background:
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
-                    borderRadius: "50px"
+                    borderRadius: "50px",
                   }}
                 />
               </div>
@@ -60,7 +60,7 @@ const SignUp = () => {
                     background:
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
-                    borderRadius: "50px"
+                    borderRadius: "50px",
                   }}
                 />
               </div>
@@ -86,7 +86,7 @@ const SignUp = () => {
                     background:
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
-                    borderRadius: "50px"
+                    borderRadius: "50px",
                   }}
                 />
               </div>
@@ -112,7 +112,7 @@ const SignUp = () => {
                     background:
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
-                    borderRadius: "50px"
+                    borderRadius: "50px",
                   }}
                 />
               </div>
@@ -138,7 +138,7 @@ const SignUp = () => {
                     background:
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
-                    borderRadius: "50px"
+                    borderRadius: "50px",
                   }}
                 />
               </div>
@@ -164,7 +164,7 @@ const SignUp = () => {
                     background:
                       "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
-                    borderRadius: "50px"
+                    borderRadius: "50px",
                   }}
                 />
               </div>
@@ -187,9 +187,10 @@ const SignUp = () => {
               <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                 <BsCheckCircleFill
                   style={{
-                    backgroundImage: "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
+                    backgroundImage:
+                      "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
                     padding: "2px",
-                    borderRadius: "50px"
+                    borderRadius: "50px",
                   }}
                 />
               </div>
@@ -212,17 +213,24 @@ const SignUp = () => {
                 name="remember"
                 value="login"
               />
-              <label for="remember" className="text-xs">
-              I’m over 18 years of age and accept these <Link href="/"><a className="underline">Term and Conditions and Privacy Policy</a></Link>
+              <label htmlFor="remember" className="text-xs">
+                I’m over 18 years of age and accept these{" "}
+                <Link href="https://google.com">
+                  <a className="underline">
+                    Term and Conditions and Privacy Policy
+                  </a>
+                </Link>
               </label>
             </div>
-            <p className="font-bold text-sm text-center mt-24">Already have an Account?</p>
-            <div className="text-center mt-8">
-              <button className="text-white rounded-full uppercase px-8 py-1 logbtn mr-5 uppercase">
-                Login
-              </button>
-            </div>
           </form>
+          <p className="font-bold text-sm text-center mt-24">
+            Already have an Account?
+          </p>
+          <div className="mt-8">
+            <button className="btn text-white rounded-full uppercase px-8 py-1 logbtn uppercase block m-auto">
+              Login
+            </button>
+          </div>
         </label>
       </label>
       <style>
@@ -230,7 +238,6 @@ const SignUp = () => {
           .modals-bg{
             background-image: url(/assets/login/reg-background2.png);
             background-repeat: no-repeat;
-            height: 100%;
             background-position: center;
           }
           .regbtn{
@@ -263,6 +270,6 @@ const SignUp = () => {
           `}
       </style>
     </div>
-  )
-}
+  );
+};
 export default SignUp;

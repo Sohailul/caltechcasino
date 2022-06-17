@@ -2,14 +2,13 @@ import { FaUserAlt } from "react-icons/fa";
 import { IoMdKey } from "react-icons/io";
 import logo from "../../public/assets/logo.png";
 import Image from "next/image";
-import SignUp from "./SignUp";
 
 const Login = () => {
   return (
     <div>
       <input type="checkbox" id="login-modal" className="modal-toggle" />
-      <label for="login-modal" className="modal cursor-pointer">
-        <label className="modal-bg p-8 modal-box w-full relative" for="">
+      <label htmlFor="login-modal" className="modal cursor-pointer">
+        <label className="modal-bg p-8 modal-box max-w relative max-h-screen" htmlFor="">
           <div className="text-center">
             <Image src={logo} width={95} height={95} alt="logo" />
           </div>
@@ -68,13 +67,12 @@ const Login = () => {
               />
             </div>
             <p className="my-5 text-gray-300">Forgot Username or Password?</p>
-            <button className="btn border-none rounded-full text-white uppercase px-8 py-1 loginbtn block m-auto">
+            <button className="btn border-none rounded-full text-[#000] uppercase px-8 py-1 loginbtn block m-auto">
               Login
             </button>
-            <div className="flex justify-center items-center mt-3">
-              <label for="remember" className="mr-3">
-                Remember me?
-              </label>
+            <div className="mt-3 text-center">
+              <label htmlFor="remember" className="checkbox">
+                <span className="mr-5">Remember me?</span>
               <input
                 type="checkbox"
                 className="checkmark"
@@ -82,14 +80,12 @@ const Login = () => {
                 name="remember"
                 value="login"
               />
+              </label>
             </div>
           </form>
           <p className="font-bold text-sm text-center mt-12">New Member?</p>
-          <div className="text-center mt-8">
-            <button
-              for="signup-modal"
-              className="modal-button btn text-white rounded-full uppercase px-8 py-1 signupbtn mr-5 uppercase"
-            >
+          <div className="text-center mt-5">
+            <button className="btn text-white rounded-full uppercase px-8 py-1 signupbtn uppercase">
               Sign Up
             </button>
           </div>
@@ -100,7 +96,6 @@ const Login = () => {
           .modal-bg{
             background-image: url(/assets/login/log-background1.png);
             background-repeat: no-repeat;
-            height: 80%;
             background-position: center;
           }
           .loginbtn{
@@ -110,11 +105,6 @@ const Login = () => {
         input::placeholder{
           color: #fff;
           opacity: 1;
-        }
-
-        .checkmark{
-          accent-color: #FD749B;
-          accent-background: black;
         }
 
         .signupbtn{
@@ -128,11 +118,11 @@ const Login = () => {
       }
       .signupbtn:hover{   
               box-shadow: none;
-              color: white;
+              color: black;
           }
+
           `}
       </style>
-      <SignUp />
     </div>
   );
 };
