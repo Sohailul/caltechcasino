@@ -3,7 +3,7 @@ import banner from '../../../public/assets/contact/banner-2.png';
 
 const ContactBanner = () => {
   return (
-    <div className="flex justify-evenly items-center grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-8">
+    <div className="flex justify-evenly items-center grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-8 mb-12">
         <div>
             <Image
             src={banner}
