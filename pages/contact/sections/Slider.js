@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import Slider from "react-slick";
 import "/node_modules/slick-carousel/slick/slick.css";
 import "/node_modules/slick-carousel/slick/slick-theme.css";
@@ -7,28 +7,41 @@ import ic2 from "../../../public/assets/contact/ic2.png";
 import ic3 from "../../../public/assets/contact/ic3.png";
 import ic4 from "../../../public/assets/contact/ic4.png";
 import ic5 from "../../../public/assets/contact/ic5.png";
+import Link from "next/link";
 
 const SampleNextArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)", borderRadius: "50px" }}
-        onClick={onClick}
-      />
-    );
-  }
-  
-  const SamplePrevArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)", borderRadius: "50px" }}
-        onClick={onClick}
-      />
-    );
-  }
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background:
+          "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
+        borderRadius: "50px",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const SamplePrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background:
+          "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
+        borderRadius: "50px",
+      }}
+      onClick={onClick}
+    />
+  );
+};
 
 const SlickSlider = () => {
   const settings = {
@@ -68,29 +81,37 @@ const SlickSlider = () => {
     ],
   };
   return (
-    <div className='w-3/4 m-auto mt-5 items-center mb-5'>
+    <div className="w-3/4 m-auto mt-5 items-center mb-5">
       <Slider {...settings}>
-        <div className='text-center'>
-          <Image src={ic1} width={116} height={116} alt="" />
-          <h3 className="font-bold text-xl uppercase text-white">Documents</h3>
+        <div className="text-center">
+          <Link href="/documents">
+            <a>
+              <Image src={ic1} width={116} height={116} alt="" />
+              <h3 className="font-bold text-xl uppercase text-white">
+                Documents
+              </h3>
+            </a>
+          </Link>
         </div>
-        <div className='text-center'>
+        <div className="text-center">
           <Image src={ic2} width={116} height={116} alt="" />
           <h3 className="font-bold text-xl uppercase text-white">Account</h3>
         </div>
-        <div className='text-center'>
+        <div className="text-center">
           <Image src={ic3} width={116} height={116} alt="" />
           <h3 className="font-bold text-xl uppercase text-white">Banking</h3>
         </div>
-        <div className='text-center'>
+        <div className="text-center">
           <Image src={ic4} width={116} height={116} alt="" />
-          <h3 className="font-bold text-xl uppercase text-white">Login/Register</h3>
+          <h3 className="font-bold text-xl uppercase text-white">
+            Login/Register
+          </h3>
         </div>
-        <div className='text-center'>
+        <div className="text-center">
           <Image src={ic5} width={116} height={116} alt="" />
           <h3 className="font-bold text-xl uppercase text-white">Support</h3>
         </div>
-        <div className='text-center'>
+        <div className="text-center">
           <Image src={ic3} width={116} height={116} alt="" />
           <h3 className="font-bold text-xl uppercase text-white">Banking</h3>
         </div>

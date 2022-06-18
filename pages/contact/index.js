@@ -20,6 +20,9 @@ import Banner from "./sections/Banner";
 import ContactBanner from "./sections/ContactBanner";
 import Slider from "./sections/Slider";
 import Categories from "./sections/Categories";
+import Providers from "./sections/Providers";
+import SlotBanner from "./sections/SlotBanner";
+import PromoWideBanner from "./sections/PromoWideBanner";
 
 export default function Index() {
   return (
@@ -42,6 +45,9 @@ export default function Index() {
             <ContactBanner />
             <Slider/>
             <Categories/>
+            <SlotBanner/>
+            <Providers/>
+            <PromoWideBanner/>
             <Footer />
             <div className="flex justify-end mr-8">
               <button className="fixed bottom-32">

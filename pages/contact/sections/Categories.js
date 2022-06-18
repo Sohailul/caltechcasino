@@ -1,6 +1,6 @@
 const Categories = () => {
   return (
-    <div className="px-8 mt-12">
+    <div className="px-8 mt-12 categories">
       <h1 className="text-3xl font-black">Categories</h1>
       <div className="mt-5">
         <h1 className="text-3xl font-black">Verifying your account</h1>
@@ -33,14 +33,13 @@ const Categories = () => {
       <style>
         {
             `
-            h1{
+            .categories h1{
                 background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 text-fill-color: transparent;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-                font-family: "Inter";
                 font-style: normal;
             }
             `
