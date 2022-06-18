@@ -16,20 +16,24 @@ import { TbAffiliate } from "react-icons/tb";
 import { RiVipDiamondLine } from "react-icons/ri";
 import Navbar from "../shared/Navbar";
 import Footer from "../shared/Footer";
-import Banner from "./sections/Banner";
-import ContactBanner from "./sections/ContactBanner";
-import Slider from "./sections/Slider";
-import Categories from "./sections/Categories";
-import Providers from "./sections/Providers";
-import SlotBanner from "./sections/SlotBanner";
-import PromoWideBanner from "./sections/PromoWideBanner";
+import Banner from "./components/Banner";
+import ContactBanner from "./components/ContactBanner";
+import Slider from "./components/Slider";
+import Categories from "./components/Categories";
+import Providers from "./components/Providers";
+import SlotBanner from "./components/SlotBanner";
+import PromoWideBanner from "./components/PromoWideBanner";
+import ContactForm from "./components/ContactForm";
 
 export default function Index() {
   return (
     <div>
       <Head>
         <title>Caltechcasino: Contact</title>
-        <meta name="description" content="Caltechcasino contact page, Sports, Live casino, rewards, paly to earn" />
+        <meta
+          name="description"
+          content="Caltechcasino contact page, Sports, Live casino, rewards, paly to earn"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
@@ -41,13 +45,16 @@ export default function Index() {
           />
           <div className="drawer-content">
             <Navbar />
-            <Banner />
-            <ContactBanner />
-            <Slider/>
-            <Categories/>
-            <SlotBanner/>
-            <Providers/>
-            <PromoWideBanner/>
+            <main>
+              <Banner />
+              <ContactBanner />
+              <Slider />
+              <Categories />
+              <ContactForm/>
+              <SlotBanner />
+              <Providers />
+              <PromoWideBanner />
+            </main>
             <Footer />
             <div className="flex justify-end mr-8">
               <button className="fixed bottom-32">
